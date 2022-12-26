@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>  // Библ. для transform()
 #include <fstream>  // Библ. для работы с файлами
 #include <windows.h>  // Библ. для ввода/вывода в консоль 
 #include <string>  // Библ. для работы со строками
@@ -55,8 +56,7 @@ void main() {
 	}
 	
 	// Перевод в нижний регистр
-	
-
+	transform(str_arr.begin(), str_arr.end(), str_arr.begin(), tolower);
 
 	// Разбиение слов 
 	string temp;
@@ -90,9 +90,6 @@ void main() {
 			i++;
 		}
 	}
-	for (int i = 0; i < count; i++) {
-		cout << out_str[i] << endl;
-	}
 
 	// Создание словаря типа "слово" - кол-во повторений (изначально идёт сортировка по алфавиту от А до Я)
 	map <string, int> words_map;
@@ -121,12 +118,30 @@ void main() {
 		cout << i << ") " << it->first << ", " << it->second << endl;
 	}
 
+
 	// Сортировка по возрастанию/убыванию
 	set<pair<string, int>, comp> set(words_map.begin(), words_map.end());
 	for (auto const& pair : set) {
 		cout << pair.first << "\t\t" << pair.second << endl;
 	}
 
+	// Поиск слова
+	while (true) {
+		bool word_flag = true;
+		string word_for_finding;
+		cin >> word_for_finding;
+		map <string, int> ::iterator itt;
+		for (itt = words_map.begin(); itt != words_map.end(); itt++) {
+			if (itt->first == word_for_finding) {
+				cout << itt->first << " | " << itt->second << endl;
+				word_flag = false;
+			}
+		}
+		if (word_flag) {
+			cout << "Нет совпадений." << endl;
+		}
+	}
+	
 	// Время работы программы
 	unsigned int end_time = clock();
 	unsigned int search_time = end_time - start_time;
