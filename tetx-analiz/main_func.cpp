@@ -102,7 +102,7 @@ void main() {
 				for (; i < str_len - 1; i++) {
 					out_str[i] = out_str[i + 1];
 				}
-				str_len--;
+				str_len--;  // Здесь скорее всего ошибка
 				i = 1;
 			}
 		}
@@ -116,6 +116,15 @@ void main() {
 	map <string, int> ::iterator it = words_map.begin();  // Вывод словаря
 	for (int i = 0; it != words_map.end(); it++, i++) {
 		cout << i << ") " << it->first << ", " << it->second << endl;
+	}
+
+	// Удаление нежелательных слов
+	string unwanted_words[6] = { "и", "не", "я", "на", "в", "а" };
+	for (int i = 0; i < 6; i++) {
+		auto it = words_map.find(unwanted_words[i]);
+		if (it != words_map.end()) {
+			words_map.erase(it);
+		}
 	}
 
 
