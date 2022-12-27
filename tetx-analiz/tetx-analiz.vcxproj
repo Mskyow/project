@@ -129,6 +129,14 @@
   <ItemGroup>
     <ClCompile Include="main_func.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="del_unwanted_symbols.h" />
+    <ClInclude Include="del_unwanted_words.h" />
+    <ClInclude Include="map_creater.h" />
+    <ClInclude Include="map_sorter.h" />
+    <ClInclude Include="text_spliter.h" />
+    <ClInclude Include="word_finder.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

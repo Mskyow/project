@@ -59,4 +59,42 @@ void main() {
     for (const auto& entry : words_map) {
         std::cout << "{" << entry.first << ", " << entry.second << "}" << std::endl;
     }
+    for (int i = 0; it != words_map.end(); it++, i++) {  // вывод мапы
+        cout << it->first << "\t\t" << it->second << endl;
+    }
+
+    // ---= Буфер =---
+    // Удаление нежелательных слов
+    string unwanted_words[6] = { "и", "не", "я", "на", "в", "а" };
+    for (int i = 0; i < 6; i++) {
+        auto it = words_map.find(unwanted_words[i]);
+        if (it != words_map.end()) {
+            words_map.erase(it);
+        }
+    }
+
+
+    // Сортировка по возрастанию/убыванию
+    set<pair<string, int>, comp> set(words_map.begin(), words_map.end());
+    for (auto const& pair : set) {
+        cout << pair.first << "\t\t" << pair.second << endl;
+    }
+    cout << words_map.size();
+
+    // Поиск слова
+    while (true) {
+        bool word_flag = true;
+        string word_for_finding;
+        cin >> word_for_finding;
+        map <string, int> ::iterator itt;
+        for (itt = words_map.begin(); itt != words_map.end(); itt++) {
+            if (itt->first == word_for_finding) {
+                cout << itt->first << " | " << itt->second << endl;
+                word_flag = false;
+            }
+        }
+        if (word_flag) {
+            cout << "Нет совпадений." << endl;
+        }
+    }
 }
