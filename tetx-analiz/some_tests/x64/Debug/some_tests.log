@@ -1,0 +1,27 @@
+﻿Сборка начата 28.12.2022 16:17:59.
+Уровень детализации журнала: Normal.     1>Проект "D:\software_labs\tetx_analizator\tetx-analiz\some_tests\some_tests.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "x64\Debug\some_tests.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt test1.cpp
+         test1.cpp
+     1>D:\software_labs\tetx_analizator\tetx-analiz\some_tests\test1.cpp(22,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+     1>D:\software_labs\tetx_analizator\tetx-analiz\some_tests\test1.cpp(68,12): error C2374: unwanted_words: переопределение; множественная инициализация
+       D:\software_labs\tetx_analizator\tetx-analiz\some_tests\test1.cpp(52): message : см. объявление "unwanted_words"
+     1>Сборка проекта "D:\software_labs\tetx_analizator\tetx-analiz\some_tests\some_tests.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "D:\software_labs\tetx_analizator\tetx-analiz\some_tests\some_tests.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\software_labs\tetx_analizator\tetx-analiz\some_tests\test1.cpp(22,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+
+
+       "D:\software_labs\tetx_analizator\tetx-analiz\some_tests\some_tests.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\software_labs\tetx_analizator\tetx-analiz\some_tests\test1.cpp(68,12): error C2374: unwanted_words: переопределение; множественная инициализация
+
+    Предупреждений: 1
+    Ошибок: 1
+
+Прошло времени 00:00:01.02
