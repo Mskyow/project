@@ -96,6 +96,10 @@ void main() {
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 
+	int answer;
+	cin >> answer;
+	cout << answer;
+
 	prog_name();
 	cout << endl << endl;
 	_getch();

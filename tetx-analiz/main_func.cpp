@@ -138,9 +138,6 @@ void word_finder(map <string, int> words_map) {
 }
 
 
-// Функции меню интерфейса
-
-
 
 void main() {
 	unsigned int start_time = clock();  // Это чтобы узнать время работы программы
