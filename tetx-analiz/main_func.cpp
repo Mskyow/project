@@ -137,6 +137,11 @@ void word_finder(map <string, int> words_map) {
 	}
 }
 
+
+// Функции меню интерфейса
+
+
+
 void main() {
 	unsigned int start_time = clock();  // Это чтобы узнать время работы программы
 
@@ -144,7 +149,7 @@ void main() {
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 
-	ifstream text("d:\\software_labs\\tetx_analizator\\lev.txt", ios::in);
+	ifstream text("d:\\software_labs\\tetx_analizator\\grob_text.txt", ios::in);
 
 	// Проверка на открыт ли файл
 	if (!text) {
@@ -190,13 +195,13 @@ void main() {
 	// Сортировка по убыванию / возрастанию и вывод
 	map_sorter(words_map);
 
-	unsigned int end_time = clock();
-	unsigned int search_time = end_time - start_time;
-	cout << search_time;
+
 	// Поиск слова
 	word_finder(words_map);
 
 	
 	// Время работы программы
+	unsigned int end_time = clock();
+	unsigned int search_time = end_time - start_time;
 	cout << search_time;
 }
