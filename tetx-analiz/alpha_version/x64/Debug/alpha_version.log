@@ -1,15 +1,16 @@
-﻿Сборка начата 02.01.2023 20:29:17.
+﻿Сборка начата 03.01.2023 1:30:08.
 Уровень детализации журнала: Normal.     1>Проект "C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\alpha_version.vcxproj" в узле 2 (целевые объекты Build).
      1>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (alpha_version.vcxproj).  Это может привести к ошибкам очистки и перестроения.
      1>InitializeBuildStatus:
-         Создание "x64\Debug\release_version.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\release_version.tlog\unsuccessfulbuild".
        ClCompile:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt interface_and_func.cpp
          interface_and_func.cpp
-     1>C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(334,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-     1>C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(525,6): warning C4101: unpos: неиспользованная локальная переменная
+     1>C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(88,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+     1>C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(279,6): warning C4101: unpos: неиспользованная локальная переменная
        Link:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Desktop\engineering\project\tetx-analiz\x64\Debug\release_version.exe" /INCREMENTAL /ILK:"x64\Debug\release_version.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Desktop\engineering\project\tetx-analiz\x64\Debug\release_version.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Desktop\engineering\project\tetx-analiz\x64\Debug\release_version.lib" /MACHINE:X64 x64\Debug\interface_and_func.obj
+         x64\Debug\interface.obj
          alpha_version.vcxproj -> C:\Users\User\Desktop\engineering\project\tetx-analiz\x64\Debug\release_version.exe
        FinalizeBuildStatus:
          Файл "x64\Debug\release_version.tlog\unsuccessfulbuild" удаляется.
@@ -25,10 +26,10 @@
 
        "C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\alpha_version.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
-         C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(334,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-         C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(525,6): warning C4101: unpos: неиспользованная локальная переменная
+         C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(88,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+         C:\Users\User\Desktop\engineering\project\tetx-analiz\alpha_version\interface_and_func.cpp(279,6): warning C4101: unpos: неиспользованная локальная переменная
 
     Предупреждений: 3
     Ошибок: 0
 
-Прошло времени 00:00:07.87
+Прошло времени 00:00:06.93
