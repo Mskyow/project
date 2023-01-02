@@ -410,13 +410,13 @@ void text_analyzer(int file_menu_answer, int font_menu_answer, int symb_menu_ans
 
 	ifstream text;
 	if (file_menu_answer == 1) {
-		text.open("d:\\software_labs\\tetx_analizator\\kurara_songs.txt", ios::in);
+		text.open("C:\\User\\Desktop\\engineering\\project\\kurara_songs.txt", ios::in);
 	}
 	else if (file_menu_answer == 2) {
-		text.open("d:\\software_labs\\tetx_analizator\\splin_songs.txt", ios::in);
+		text.open("C:splin_songs.txt", ios::in);
 	}
 	else if (file_menu_answer == 3) {
-		text.open("d:\\software_labs\\tetx_analizator\\ddt_songs.txt", ios::in);
+		text.open("C:\\Users\\User\\Desktop\\engineering\\project\\ddt_songs.txt", ios::in);
 	}
 
 
