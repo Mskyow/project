@@ -1,36 +1,30 @@
-﻿Сборка начата 28.12.2022 16:39:32.
+﻿Сборка начата 02.01.2023 14:23:48.
 Уровень детализации журнала: Normal.     1>Проект "D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\alpha_version.vcxproj" в узле 2 (целевые объекты Build).
-     1>InitializeBuildStatus:
-         Создание "x64\Debug\alpha_version.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+     1>PrepareForBuild:
+         Создание каталога "x64\Debug\release_version.tlog\".
+       InitializeBuildStatus:
+         Создание "x64\Debug\release_version.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
        ClCompile:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt interface_and_func.cpp
          interface_and_func.cpp
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(162,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(54): warning C4715: file_menu: значение возвращается не при всех путях выполнения
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(76): warning C4715: font_menu: значение возвращается не при всех путях выполнения
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(99): warning C4715: symb_menu: значение возвращается не при всех путях выполнения
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(121): warning C4715: word_menu: значение возвращается не при всех путях выполнения
-     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(143): warning C4715: sort_menu: значение возвращается не при всех путях выполнения
+     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(334,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+     1>D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(525,6): warning C4101: unpos: неиспользованная локальная переменная
        Link:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\alpha_version.exe" /INCREMENTAL /ILK:"x64\Debug\alpha_version.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\alpha_version.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\alpha_version.lib" /MACHINE:X64 x64\Debug\interface_and_func.obj
-         alpha_version.vcxproj -> D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\alpha_version.exe
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\release_version.exe" /INCREMENTAL /ILK:"x64\Debug\release_version.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\release_version.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\release_version.lib" /MACHINE:X64 x64\Debug\interface_and_func.obj
+         alpha_version.vcxproj -> D:\software_labs\tetx_analizator\tetx-analiz\x64\Debug\release_version.exe
        FinalizeBuildStatus:
-         Файл "x64\Debug\alpha_version.tlog\unsuccessfulbuild" удаляется.
-         Обращение к "x64\Debug\alpha_version.tlog\alpha_version.lastbuildstate".
+         Файл "x64\Debug\release_version.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\release_version.tlog\release_version.lastbuildstate".
      1>Сборка проекта "D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\alpha_version.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
        "D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\alpha_version.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(162,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(54): warning C4715: file_menu: значение возвращается не при всех путях выполнения
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(76): warning C4715: font_menu: значение возвращается не при всех путях выполнения
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(99): warning C4715: symb_menu: значение возвращается не при всех путях выполнения
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(121): warning C4715: word_menu: значение возвращается не при всех путях выполнения
-         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(143): warning C4715: sort_menu: значение возвращается не при всех путях выполнения
+         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(334,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+         D:\software_labs\tetx_analizator\tetx-analiz\alpha_version\interface_and_func.cpp(525,6): warning C4101: unpos: неиспользованная локальная переменная
 
-    Предупреждений: 6
+    Предупреждений: 2
     Ошибок: 0
 
-Прошло времени 00:00:01.86
+Прошло времени 00:00:01.52
